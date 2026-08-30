@@ -1,236 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Liza Snizhko</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liza Snizhko</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- BACKGROUND BLOBS -->
-  <canvas id="bg-canvas" aria-hidden="true" style="position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0;opacity:0.55;"></canvas>
+    <!-- NAVIGATION -->
+    <header class="navbar">
+        <a href="#about" class="logo">Liza Snizhko</a>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-  <!-- NAV -->
-  <nav id="navbar">
-    <div class="nav-inner">
-      <a class="nav-logo" href="#hero">Liza Snizhko</a>
-      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-links" id="nav-menu">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="https://drive.google.com/file/d/1dsEI5Q8j417wnY57R1LMJ-wgv5anGDnc/view?usp=sharing" target="_blank">Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- HERO -->
-  <section id="hero">
-    <div class="container">
-      <p class="hero-eyebrow reveal">Data Analyst &amp; BI Specialist</p>
-      <h1 class="hero-name reveal">Hi, I'm Liza!</h1>
-      <p class="hero-title reveal">Turning data into decisions — clearly and without noise.</p>
-      <p class="hero-bio reveal">I work at the intersection of business strategy and data, building dashboards, reports, and analyses that help teams understand what's actually happening and what to do next.</p>
-      <div class="hero-actions reveal">
-        <a href="https://www.linkedin.com/in/liza-snizhko/" target="_blank" class="btn btn-primary">Connect on LinkedIn</a>
-      </div>
-      <div class="hero-stat-row reveal">
-        <div class="hero-stat">
-          <div class="hero-stat-num">2028</div>
-          <div class="hero-stat-label">Graduate in</div>
-        </div>
-        <div class="hero-stat">
-          <div class="hero-stat-num">10+</div>
-          <div class="hero-stat-label">Projects delivered</div>
-        </div>
-        <div class="hero-stat">
-          <div class="hero-stat-num">SQL · R · Python · Power BI · Excel</div>
-          <div class="hero-stat-label">Core stack</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about">
-    <div class="container">
-      <p class="section-label reveal">About</p>
-      <h2 class="section-title reveal">A bit about me</h2>
-      <div class="about-grid">
-        <div class="about-text reveal">
-          <p>I'm a data analyst with a background in business operations and a strong eye for what numbers are actually trying to say. I specialize in sales and revenue analysis, building BI dashboards, and translating messy datasets into clear, actionable reports.</p>
-          <p>I've worked across hospitality and events, where I developed a knack for segmenting revenue streams and spotting trends before they become problems. I'm equally comfortable writing complex SQL queries, wrangling data in R, or building a Tableau dashboard from scratch.</p>
-          <p>I believe good analysis is part technical, part narrative — the insight only matters if it lands clearly.</p>
-        </div>
-        <div class="edu-grid">
-        <div class="edu-card reveal">
-          <div class="edu-icon">
-            <img src="img/uw-logo.png" alt="UW Logo">
-          </div>
-          <div class="edu-degree">BS in Informatics / Minor in Business</div>
-          <div class="edu-school">University of Washington Seattle</div>
-          <div class="edu-year">GPA: 4.0</div>
-          <div class="edu-year">Graduate in 2028</div>
-        </div>
-      </div>
-        <div class="about-skills reveal">
-          <div class="skills-group">
-            <div class="skills-group-label">Analysis &amp; querying</div>
-            <div class="skill-tags">
-              <span class="skill-tag">SQL</span>
-              <span class="skill-tag">R</span>
-              <span class="skill-tag">Python</span>
-              <span class="skill-tag">Excel</span>
+    <!-- ABOUT -->
+    <section id="about" class="about section">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Hi, I'm Liza!</h2>
+                <p>I'm an Informatics student at the <strong><a href="https://www.washington.edu/" target="_blank">University of Washington</a></strong> with an interest in data analytics and business. My experience includes 3 years of experience in administrative and business management with high-responsibilities, 400 leetcode problems solved in C#, Python, and SQL and business analytics projects.</p>
+                <p>Recently, I have also become interested in analytics in finance and am currently exploring the corporate finance analyst career path. I like running or researching stocks and ETFs to diversify my portfolio, learn about financial statements and financial modeling.</p>
+                <p>Currently, I'm exploring opportunities in <strong>data analytics, business analytics, research, and finance.</strong></p>
             </div>
-          </div>
-
-          <div class="skills-group">
-            <div class="skills-group-label">Visualization &amp; BI</div>
-            <div class="skill-tags">
-              <span class="skill-tag">Tableau</span>
-              <span class="skill-tag">Power BI</span>
-              <span class="skill-tag">Looker</span>
-              <span class="skill-tag">Google Data Studio</span>
+            <div class="about-right">
+                <img src="img/uw-logo.png" alt="University of Washington" class="uw-image">
             </div>
-          </div>
-          <div class="skills-group">
-            
-            
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- EXPERIENCE -->
-  <section id="experience">
-    <div class="container">
-      <h2 class="section-title reveal">Experience</h2>
-      <div class="timeline">
+    <!-- EXPERIENCE -->
+    <section id="experience" class="experience section">
+        <div class="experience-intro">
+            <h2>Experience</h2>
+        </div>
+        <div class="experience-list">
 
-        <div class="timeline-item reveal">
-          <div class="timeline-date">2024 — Present</div>
-          <div class="timeline-body">
-            <div class="timeline-role">Data Analyst &amp; Venue Manager</div>
-            <div class="timeline-company">Conundroom & Pacific Axes Corporation</div>
-            <div class="timeline-desc">
-              <ul>
-                <li>Grew corporate event sales 37% YoY (2024–2025) through HubSpot CRM-based outreach and B2B pipeline management for clients including Microsoft, Google, Meta, and more</li>
-                <li>Built sales performance dashboard using SQL and Power BI to identify low-demand periods, which enabled targeted marketing decisions that resulted in a 15.4% increase in annual event inquiries.</li>
-                <li>Delivered an add-on revenue analysis in Excel across 1,504 transactions, identified a 1.71% revenue attachment rate, and recommended discontinuation of the upsell program, which leadership adopted (see Projects section).</li>
-                <li>Support financial planning and reporting by processing and analyzing biweekly payroll data for 32 team members</li>
-              </ul>
+            <!-- EXPERIENCE 1 -->
+            <div class="experience-item">
+                <div class="experience-date">Oct 2024-Present</div>
+                <div class="experience-main">
+                    <div class="experience-heading">
+                        <div>
+                            <h3>Operations Manager</h3>
+                            <div class="experience-company">Conundroom</div>
+                        </div>
+                        <div class="experience-location">Redmond, WA</div>
+                    </div>
+                    <p class="experience-description">Oversee business operations, events, customer experience, scheduling, and reporting while using business data to evaluate performance and identify opportunities for improvement.</p>
+                    <div class="experience-tags">
+                        <span>Business Analytics</span>
+                        <span>Excel</span>
+                        <span>CRM</span>
+                        <span>Events</span>
+                        <span>Process Improvement</span>
+                    </div>
+                </div>
             </div>
-            <div class="timeline-tags">
-              <span class="timeline-tag">SQL</span>
-              <span class="timeline-tag">R</span>
-              <span class="timeline-tag">Revenue reporting</span>
-              <span class="timeline-tag">Dashboard design</span>
+
+            <!-- EXPERIENCE 2 -->
+            <div class="experience-item">
+                <div class="experience-date">Aug 2022-Aug 2024</div>
+                <div class="experience-main">
+                    <div class="experience-heading">
+                        <div>
+                            <h3>STEM Tutor & Business Assistant</h3>
+                            <div class="experience-company">STEP Computer Academy</div>
+                        </div>
+                        <div class="experience-location">Bellevue, WA</div>
+                    </div>
+                    <p class="experience-description">Manage day-to-day operations, staff, scheduling, customer service, CRM systems, events, and business reporting. Use data from bookings, customers, and sales to identify trends, improve processes, and support operational decisions.</p>
+                    <div class="experience-tags">
+                        <span>SQL (PostgreSQL)</span>
+                        <span>Power BI</span>
+                        <span>Excel</span>
+                        <span>HubSpot</span>
+                        <span>Operations</span>
+                        <span>Analytics</span>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
 
-        <div class="timeline-item reveal">
-          <div class="timeline-date">2022 — 2024</div>
-          <div class="timeline-body">
-            <div class="timeline-role">Business Analyst</div>
-            <div class="timeline-company">STEP Computer Academy</div>
-            <div class="timeline-desc">Supported data-driven decision making across operations. Developed reporting workflows, managed payroll data, and provided analytical support for business planning cycles.</div>
-            <div class="timeline-tags">
-              <span class="timeline-tag">Excel</span>
-              <span class="timeline-tag">Reporting</span>
-              <span class="timeline-tag">Operations</span>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects section">
+        <div class="projects-intro">
+            <h2>Selected <em>projects</em></h2>
+        </div>
+        <div class="project-grid">
+
+            <!-- PROJECT 1 -->
+            <article class="project-card">
+                <div class="project-image project-image-ev">
+                    <img src="img/ev-project.png" alt="Electric Vehicle Adoption project">
+                    <div class="project-overlay"></div>
+                    <div class="project-number">01</div>
+                </div>
+                <div class="project-content">
+                    <h3>Electric Vehicles and Income Patterns in WA State</h3>
+                    <p>Analyzed more than 70,000 electric vehicle registration records alongside county income data to examine relationships across Washington counties.</p>
+                    <div class="project-tools">
+                        <span>R</span>
+                        <span>RStudio</span>
+                        <span>Data Wrangling</span>
+                        <span>Visualization</span>
+                    </div>
+                    <a href="https://lizasnizhko.github.io/vehicles-income-correlation-analysis/" target="_blank" class="project-button">View project<span>↗</span></a>
+                </div>
+            </article>
+
+            <!-- PROJECT 3 -->
+            <article class="project-card">
+                <div class="project-image">
+                    <img src="img/tableau.png" alt="Electric Vehicle Adoption project">
+                    <div class="project-overlay"></div>
+                    <div class="project-number">03</div>
+                </div>
+                <div class="project-content">
+                    <h3>2025-26 Sales Performance Dashboard</h3>
+                    <p>Built reporting and dashboards using CRM and booking data to identify trends in event demand and support targeted business decisions.</p>
+                    <div class="project-tools">
+                        <span>SQL (PostgreSQL)</span>
+                        <span>Tableau</span>
+                        <span>Excel</span>
+                        <span>MS Power Query</span>
+                    </div>
+                    <a href="https://github.com/LizaSnizhko/conundroom_25-26_sales_analysis" target="_blank" class="project-button">View project<span>↗</span></a>
+                </div>
+            </article>
+
+            <!-- PROJECT 2 -->
+            <article class="project-card">
+                <div class="project-image project-image-finance">
+                    <img src="img/add-on.png" alt="Electric Vehicle Adoption project">
+                    <div class="project-overlay"></div>
+                    <div class="project-number">02</div>
+                </div>
+                <div class="project-content">
+                    <h3>Event Add-On Revenue Analysis</h3>
+                    <p>Analyzed 1,504 bookings to evaluate customer adoption and revenue contribution of a priced event add-on, supporting a decision to upgrade the add-on and increase its price.</p>
+                    <div class="project-tools">
+                        <span>Excel</span>
+                        <span>Pivot Tables</span>
+                        <span>Data Analysis</span>
+                        <span>Business</span>
+                    </div>
+                    <a href="https://lizasnizhko.github.io/add-on-revenue-performance/tokens_revenue_report.pdf" target="_blank" class="project-button">View project<span>↗</span></a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact section">
+        <div class="contact-content">
+            <h2>Let's <em>connect!</em></h2>
+            <p>I'm always open to connecting about analytics, research, business, finance, and interesting projects.</p>
+            <div class="contact-links">
+                <a href="mailto:snizhko@uw.edu" class="contact-button">Email<span>↗</span></a>
+                <a href="https://www.linkedin.com/in/liza-snizhko/" target="_blank" rel="noopener noreferrer" class="contact-button">LinkedIn<span>↗</span></a>
+                <a href="https://github.com/LizaSnizhko" target="_blank" rel="noopener noreferrer" class="contact-button">GitHub<span>↗</span></a>
             </div>
-          </div>
         </div>
+        <footer>
+            <span>© 2026 Liza Snizhko | snizhko@uw.edu</span>
+        </footer>
+    </section>
 
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects">
-    <div class="container">
-      <h2 class="section-title reveal">Projects</h2>
-      <div class="projects-grid">
-
-        <div class="project-card reveal">
-          <div class="project-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
-          </div>
-          <div class="project-title">Venue Revenue Dashboard</div>
-          <div class="project-desc">Built a multi-view BI dashboard to segment private event vs. regular booking revenue. Surfaced a 35% YoY decline in one category that had gone unnoticed without segmentation.</div>
-          <div class="project-stack">
-            <span>SQL</span><span>R</span><span>Tableau</span>
-          </div>
-          <a href="#" class="project-link">View project →</a>
-        </div>
-
-        <div class="project-card reveal">
-          <div class="project-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-          </div>
-          <div class="project-title">Sales Trend Analysis</div>
-          <div class="project-desc">End-to-end analysis of sales drivers across venues, including what factors predict high-revenue periods and where operational changes would have the most impact.</div>
-          <div class="project-stack">
-            <span>R</span><span>ggplot2</span><span>Excel</span>
-          </div>
-          <a href="#" class="project-link">View project →</a>
-        </div>
-
-        <div class="project-card reveal">
-          <div class="project-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
-          </div>
-          <div class="project-title">Booking System ETL</div>
-          <div class="project-desc">Designed a data pipeline to extract, clean, and transform booking records from an API into a structured format suitable for reporting and analysis.</div>
-          <div class="project-stack">
-            <span>Python</span><span>SQL</span><span>API</span>
-          </div>
-          <a href="#" class="project-link">View project →</a>
-        </div>
-
-        <div class="project-card reveal">
-          <div class="project-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-          </div>
-          <div class="project-title">SQL LeetCode Portfolio</div>
-          <div class="project-desc">A collection of solved SQL problems with annotated walkthroughs — covering window functions, pivoting, aggregations, and query optimization techniques.</div>
-          <div class="project-stack">
-            <span>SQL</span><span>PostgreSQL</span>
-          </div>
-          <a href="#" class="project-link">View on GitHub →</a>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact">
-    <div class="container contact-inner">
-      <h2 class="section-title reveal">Thank you for stopping by, let's connect!</h2>
-      <div class="contact-links reveal">
-        <a href="mailto:snizhko@uw.edu" class="contact-link">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          snizhko@uw.edu
-        </a>
-        <a href="https://www.linkedin.com/in/liza-snizhko" target="_blank" class="contact-link">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-          LinkedIn
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <p>© 2026 Liza Snizhko</p>
-  </footer>
-
-  <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
