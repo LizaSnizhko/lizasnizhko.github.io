@@ -642,6 +642,7 @@ padding-bottom: 90px;
     height: 58px;
 
     border: 1px solid var(--text);
+    border-radius: 100px;
 
     display: flex;
     align-items: center;
@@ -687,10 +688,6 @@ footer {
     text-transform: uppercase;
 }
 
-
-/* --------------------
-   RESPONSIVE
--------------------- */
 
 @media (max-width: 1000px) {
 
