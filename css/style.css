@@ -631,7 +631,7 @@ padding-bottom: 90px;
     display: flex;
     flex-wrap: wrap;
 
-    gap: 12px;
+    gap: 15px;
 
     margin-top: 45px;
 }
@@ -646,7 +646,9 @@ padding-bottom: 90px;
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+
+    position: relative;
 
     padding: 0 20px;
 
