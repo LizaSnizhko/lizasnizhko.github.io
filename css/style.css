@@ -253,9 +253,8 @@ padding-bottom: 90px;
 
 
 .experience-date {
-    font-family: var(--mono);
-    font-size: 0.7rem;
-
+    font-family: Inter, "Inter", serif;
+    font-size: 0.8rem;
     letter-spacing: 0.08em;
 
     color: var(--olive);
@@ -293,10 +292,8 @@ padding-bottom: 90px;
 
 
 .experience-location {
-    font-family: var(--mono);
-    font-size: 0.65rem;
-
-    text-transform: uppercase;
+    font-family: Inter, "Inter", serif;
+    font-size: 0.8rem;
 
     color: var(--olive);
 }
@@ -554,10 +551,8 @@ padding-bottom: 90px;
 
     padding: 7px 11px;
 
-    font-family: var(--mono);
-    font-size: 0.6rem;
-
-    text-transform: uppercase;
+    font-family: Inter, "Inter", serif;
+    font-size: 0.75rem;
 
     color: var(--light-text);
 }
