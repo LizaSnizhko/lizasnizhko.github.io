@@ -345,8 +345,8 @@ padding-bottom: 90px;
     color: var(--light-text);
     padding-top: 80px;
     padding-bottom: 80px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 180px;
+    padding-right: 180px;
 }
 
 
@@ -504,7 +504,7 @@ padding-bottom: 90px;
 .project-meta {
     font-family: var(--mono);
 
-    font-size: 0.65rem;
+    font-size: 0.85rem;
 
     text-transform: uppercase;
     letter-spacing: 0.08em;
@@ -518,7 +518,7 @@ padding-bottom: 90px;
 .project-card h3 {
     font-family: var(--serif);
 
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 400;
 }
 
@@ -526,7 +526,7 @@ padding-bottom: 90px;
 .project-card p:not(.project-meta) {
     margin-top: 14px;
 
-    font-size: 0.8rem;
+    font-size: 0.95rem;
     line-height: 1.7;
 
     opacity: 0.8;
@@ -553,7 +553,7 @@ padding-bottom: 90px;
     padding: 7px 11px;
 
     font-family: Inter, "Inter", serif;
-    font-size: 0.62rem;
+    font-size: 0.8rem;
 
     color: var(--light-text);
 }
@@ -571,7 +571,7 @@ padding-bottom: 90px;
     align-items: center;
     justify-content: space-between;
 
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: rgba(255, 255, 255, 0.75);
 
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
@@ -704,6 +704,20 @@ padding-bottom: 90px;
     font-size: 0.75rem;
     background-color: #dedfc9;
 }
+ .education-divider {
+        margin-top: 80px;
+        margin-left: calc(-50vw + 50%);
+        margin-right: calc(-50vw + 50%);
+        width: 100vw;
+        color: var(--olive);
+        opacity: 0.6;
+    }
+
+    .education-divider svg {
+        width: 100%;
+        height: 40px;
+        display: block;
+    }
 /* --------------------
    CONTACT
 -------------------- */
@@ -816,7 +830,7 @@ footer {
     letter-spacing: normal;
 }
 
-@media (min-width: 1600px){
+@media (min-width: 2000px){
 
     .projects {
         padding-left: 200px;
@@ -839,6 +853,12 @@ footer {
     }
     .project-button {
         font-size: 1rem;
+    }
+
+    .education {
+        padding-top: 120px;
+        padding-bottom: 170px;
+        scroll-margin-top: 200px;
     }
 
 }
