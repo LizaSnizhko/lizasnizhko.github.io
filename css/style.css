@@ -604,7 +604,7 @@ padding-bottom: 90px;
     background: #e8e6dc;
     color: #22271f;
     padding-top: 80px;
-    padding-bottom: 110px;
+    padding-bottom: 100px;
     scroll-margin-top: 130px;
 }
 
@@ -742,7 +742,6 @@ padding-bottom: 90px;
 }
 
 .contact-content p {
-    max-width: 420px;
 
     margin-top: 30px;
 
@@ -857,8 +856,11 @@ footer {
 
     .education {
         padding-top: 120px;
-        padding-bottom: 170px;
+        padding-bottom: 140px;
         scroll-margin-top: 200px;
+    }
+    .contact-image {
+        margin-right: 400px;
     }
 
 }
