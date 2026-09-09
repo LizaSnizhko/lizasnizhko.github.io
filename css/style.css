@@ -134,7 +134,7 @@ h2 em {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    font-size: 0.82rem;
+    font-size: 0.84rem;
     line-height: 1.8;
     max-width: 680px;
 }
