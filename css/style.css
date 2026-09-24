@@ -873,6 +873,10 @@ footer {
     .about-photo{
         display: none;
     }
+    .education-card h3 {
+        font-family: var(--serif);
+        font-size: 24px;
+    }
 }
 
 @media (max-width: 500px) {
