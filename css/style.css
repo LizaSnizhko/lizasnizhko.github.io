@@ -9,12 +9,14 @@
     --serif: "Cormorant Garamond", serif;
     --sans: "Inter", sans-serif;
     --mono: "DM Mono", monospace;
+    --nav-height: 66px;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
 }
 
 html {
@@ -33,9 +35,14 @@ a {
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+}
+
 /* --------------------
    NAVIGATION
 -------------------- */
+
 
 .navbar {
     width: 100%;
@@ -88,12 +95,14 @@ a {
     width: 100%;
 }
 
+
 /* --------------------
    GENERAL SECTIONS
 -------------------- */
 
 .section {
     padding: 14vw 14vw;
+    scroll-margin-top: var(--nav-height);
 }
 
 h2 {
@@ -158,6 +167,7 @@ h2 em {
     display: flex;
     gap: 12px;
     margin-top: 8px;
+    flex-wrap: wrap;
 }
 
 .about-button {
@@ -235,7 +245,6 @@ h2 em {
     color: #22271f;
     padding-top: 64px;
     padding-bottom: 80px;
-    scroll-margin-top: 104px;
 }
 
 .experience-intro {
@@ -251,7 +260,7 @@ h2 em {
 }
 
 .experience-card {
-    width: calc(100% + 40px);
+    width: 100%;
     background: rgba(102, 113, 93, 0.06);
     color: #22271f;
     border: 1px solid #66715d;
@@ -368,7 +377,6 @@ h2 em {
     padding-bottom: 64px;
     padding-left: 144px;
     padding-right: 144px;
-    scroll-margin-top: 64px;
 }
 
 .projects-intro {
@@ -569,7 +577,6 @@ h2 em {
     color: #22271f;
     padding-top: 64px;
     padding-bottom: 80px;
-    scroll-margin-top: 104px;
 }
 
 .education-intro {
@@ -789,13 +796,9 @@ footer {
     .education {
         padding-top: 96px;
         padding-bottom: 112px;
-        scroll-margin-top: 160px;
     }
     .contact-image {
         margin-right: 320px;
-    }
-    .projects {
-        scroll-margin-top: 160px;
     }
 }
 
@@ -806,12 +809,18 @@ footer {
 }
 
 @media (max-width: 800px) {
+    :root {
+        --nav-height: 72px;
+    }
     .navbar {
-        padding: 0 7vw;
+        padding: 0 6vw;
     }
     .navbar nav {
-        gap: 14px;
-        font-size: 0.6rem;
+        gap: 16px;
+        font-size: 0.72rem;
+    }
+    .logo {
+        font-size: 0.92rem;
     }
     .section,
     .contact {
@@ -819,11 +828,12 @@ footer {
         padding-right: 7vw;
     }
     .about {
-        padding-top: 104px;
+        padding-bottom: 0px;
+        margin-top: 40px;
     }
     .about-content {
         grid-template-columns: 1fr;
-        gap: 48px;
+        gap: 32px;
     }
     .about-right {
         justify-content: flex-start;
@@ -848,24 +858,33 @@ footer {
         height: 192px;
     }
     .contact-links {
-        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 8px;
     }
     .contact-button {
-        width: 100%;
-        max-width: 240px;
+        width: auto;
+        flex: 1;
+        padding: 0 8px;
+        font-size: 0.72rem;
+    }
+    .contact-image {
+        display: none;
+    }
+    .about-photo{
+        display: none;
     }
 }
 
 @media (max-width: 500px) {
     .navbar nav {
-        gap: 10px;
-        font-size: 0.52rem;
+        gap: 12px;
+        font-size: 0.7rem;
     }
     .logo {
-        font-size: 0.8rem;
+        font-size: 0.85rem;
     }
     .about {
-        padding-top: 96px;
+        padding-top: calc(var(--nav-height) + 20px);
     }
     .section {
         padding-top: 80px;
@@ -874,7 +893,18 @@ footer {
     .project-content {
         padding: 20px;
     }
+    .education-logo {
+        width: 56px;
+    }
     .uw-image {
         width: 144px;
+    }
+    .about-photo {
+        width: 150px;
+        margin-top: -18px;
+    }
+    .contact-button {
+        font-size: 0.66rem;
+        padding: 0 4px;
     }
 }
