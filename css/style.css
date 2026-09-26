@@ -375,8 +375,8 @@ h2 em {
     color: var(--light-text);
     padding-top: 64px;
     padding-bottom: 64px;
-    padding-left: 144px;
-    padding-right: 144px;
+    padding-left: 120px;
+    padding-right: 120px;
 }
 
 .projects-intro {
