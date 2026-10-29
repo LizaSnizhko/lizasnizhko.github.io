@@ -640,6 +640,13 @@ h2 em {
     opacity: 0.75;
 }
 
+.education-bullet {
+    margin-top: 10px;
+    font-size: 0.8rem;
+    opacity: 0.75;
+    margin-left: 20px;
+}
+
 .education-meta {
     display: flex;
     flex-direction: column;
