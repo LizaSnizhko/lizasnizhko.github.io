@@ -294,6 +294,12 @@ h2 em {
     font-size: 0.9rem;
     opacity: 0.75;
 }
+.experience-company-decs {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    opacity: 0.5;
+    font-style: italic;
+}
 
 .experience-meta {
     display: flex;
