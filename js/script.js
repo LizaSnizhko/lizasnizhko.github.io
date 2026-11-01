@@ -28,8 +28,6 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 });
 
 
-// Add a subtle active state to navigation links while scrolling
-
 const sections = document.querySelectorAll("section[id]");
 const navLinks = document.querySelectorAll(".navbar nav a");
 
@@ -65,4 +63,32 @@ const observer = new IntersectionObserver(
 
 sections.forEach(section => {
     observer.observe(section);
+});
+
+
+
+// Horizontal project navigation
+
+const projectGrid = document.querySelector(".project-grid");
+const projectPrev = document.querySelector("#project-prev");
+const projectNext = document.querySelector("#project-next");
+
+projectNext.addEventListener("click", () => {
+    const card = projectGrid.querySelector(".project-card");
+    const gap = parseFloat(getComputedStyle(projectGrid).gap);
+
+    projectGrid.scrollBy({
+        left: card.offsetWidth + gap,
+        behavior: "smooth"
+    });
+});
+
+projectPrev.addEventListener("click", () => {
+    const card = projectGrid.querySelector(".project-card");
+    const gap = parseFloat(getComputedStyle(projectGrid).gap);
+
+    projectGrid.scrollBy({
+        left: -(card.offsetWidth + gap),
+        behavior: "smooth"
+    });
 });
